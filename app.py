@@ -43,7 +43,8 @@ if file is None:
     st.stop()
 
 # ---------------- LOAD DATA ----------------
-df = pd.read_excel(file)
+data = pd.read_excel(file, engine="openpyxl")
+
 
 if "Last Date" not in df.columns:
     st.error("❌ Column 'Last Date' missing")
