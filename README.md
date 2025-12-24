@@ -20,7 +20,9 @@ clear insights on deadlines, priorities, and opportunity status.
 - **Last Date** (supports DD.MM.YYYY or Open)
 
 ## 🌐 Live App
-ai-decision-assistant-tamqgnfy5u9mxlbwrhf8ip
+🌐 Live App
+https://ai-decision-assistant-tamqgnfy5u9mxlbwrhf8ip.streamlit.app
+
 
 ## 👩‍💻 Developed by
 Haniiska A
