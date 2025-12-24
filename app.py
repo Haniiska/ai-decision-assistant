@@ -9,7 +9,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ---------------- CUSTOM STYLE ----------------
+# ---------------- CUSTOM STYLE ---------------
 st.markdown("""
 <style>
     body {
