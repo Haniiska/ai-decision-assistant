@@ -23,7 +23,8 @@ if file is None:
     st.stop()
 
 # Read Excel
-df = pd.read_excel(file)
+df = pd.read_excel(file, engine=None)
+
 
 st.success("File uploaded successfully")
 
