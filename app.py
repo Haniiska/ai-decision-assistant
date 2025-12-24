@@ -43,12 +43,18 @@ if file is None:
     st.stop()
 
 # ---------------- LOAD DATA ----------------
-data = pd.read_excel(file, engine="openpyxl")
-
-
-if "Last Date" not in df.columns:
-    st.error("❌ Column 'Last Date' missing")
+# ---------------- LOAD DATA ----------------
+try:
+    df = pd.read_excel(file)
+except Exception as e:
+    st.error("Excel file read panna mudiyala. Please download & upload a proper .xlsx file.")
     st.stop()
+
+# ---------------- COLUMN VALIDATION ----------------
+if "Last Date" not in df.columns:
+    st.error("❌ Required column 'Last Date' not found in Excel.")
+    st.stop()
+
 
 # ---------------- STATUS LOGIC ----------------
 today = datetime.today()
