@@ -47,7 +47,7 @@ if file is None:
 try:
     df = pd.read_excel(file)
 except Exception as e:
-    st.error("Excel file read panna mudiyala. Please download & upload a proper .xlsx file.")
+    st.error("can't read the excel file. Please download & upload a proper .xlsx file.")
     st.stop()
 
 # ---------------- COLUMN VALIDATION ----------------
